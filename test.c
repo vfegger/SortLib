@@ -35,7 +35,7 @@ void test(void (*sort)(int *, int), int *array, int *aux, int n)
     end = clock();
     cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
     printf("%lf ", cpu_time_used);
-    printf("\tResult 0-1 : %d\n", checkArrays(aux, n));
+    printf("\t Errors: %d\n", checkArrays(aux, n));
 }
 
 int main()
